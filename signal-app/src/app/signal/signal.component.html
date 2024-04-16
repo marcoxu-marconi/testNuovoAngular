@@ -1,0 +1,13 @@
+<p>signal works!</p>
+<p>{{count()}}</p>
+<p>{{count()}}</p>
+<p>{{doubleCount()}}</p>
+<p>{{conditionalCalculated()}}</p>
+
+<!-- ngmodel fa un bind bidirezionale -->
+<div>
+    <button (click)="incrementCount()">increment</button>
+    <button (click)="resetCount()">reset</button>
+    
+    <input type="checkbox" [(ngModel)]="calculate">
+</div>
