@@ -5,7 +5,7 @@
 </div>
 <ul>
     @for(name of names(); track $index){
-        <li>{{name}}</li>
+        <li>{{name}}   <button (click)="deleteName($index)">delete</button></li>
     } @empty{
         <li>No names</li>
     }

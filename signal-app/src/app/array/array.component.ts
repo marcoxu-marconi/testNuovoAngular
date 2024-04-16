@@ -10,9 +10,19 @@ import { Component, signal } from '@angular/core';
 export class ArrayComponent {
 names = signal<string[]>([]);
 
-addName(name: string){
+addName(name: string){// add cambia indirizzo perche 
   // oggetti gestiti per riferimento
   //
   this.names.update(oldArray => [...oldArray, name]);
 }
+
+deleteName(index: number){ // qua oldarray non cambia indiizzo
+ // 
+  this.names.update(oldArray => {
+    oldArray.splice(index, 1);
+    return oldArray;
+  });
+}
+
+
 }
