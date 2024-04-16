@@ -36,5 +36,7 @@ resetCount(){
 //count è un elemento in grado di lanciare segnali. 
 //zonejs ogni volta riaggiorna tutta la pagina. anche se cambia solo un valore
 //con signal non aggiorna tutta la pagina ma solo il valore che cambia, cambia solo element che chiama il set e update. 
-//INCREMENTA IL PERFORMANCE.
+//INCREMENTA IL PERFORMANCE
+
+
 }

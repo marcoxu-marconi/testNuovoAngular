@@ -1,0 +1,12 @@
+<h2>Arrays</h2>
+<div>
+    <input type="text" #nameInput>
+    <button (click)="addName(nameInput.value)">Aggiungi</button>
+</div>
+<ul>
+    @for(name of names(); track $index){
+        <li>{{name}}</li>
+    } @empty{
+        <li>No names</li>
+    }
+</ul>
